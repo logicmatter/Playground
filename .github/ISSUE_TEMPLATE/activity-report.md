@@ -1,14 +1,19 @@
 ---
 name: Activity Report
-about: VISPER Activities related to development and engineering for SDLC/PDLC
+about: Use Activity Report to log steeps done to manage the solution lifecycle. or
+  Product lifecycle (VISPER)
 title: "[activity]"
 labels: i:activity
 assignees: ''
 
 ---
 
-TASKS: Sprint planning or any similar activity
-# Planning #
+TASKS: This is a ticket to track the activities that improve our product or solution for each release. So basically a VIPER stage-gate process where we track features from the requirement to release.
+# Requirements
+- [ ] Gathered Todo's & Feature requests and elaborated to high clarity 
+
+# Planning
+- [ ] Backlog planing and Sprint Planning completed
 - [ ] Backlog planing and Sprint Planning completed
 - [ ] Organized Deliverables by Milestones by grouping fixes and enhancements
 - [ ] Reviewed he milestones with the Stakeholders and got approval
