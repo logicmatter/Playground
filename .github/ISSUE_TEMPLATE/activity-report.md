@@ -8,16 +8,17 @@ assignees: ''
 
 ---
 
-TASKS: This is a ticket to track the activities that improve our product or solution for each release. So basically a VIPER stage-gate process where we track features from the requirement to release.
-# Requirements
-- [ ] Gathered Todo's & Feature requests and elaborated to high clarity 
+TASKS:  Used for tracking internal activities or specific work being done that improves support services, quality, security, performance, knowledge, etc. Add and remove whatever tasks are relevant to the repository or project you are tracking. We have some basically a VIPER stage-gate process where we track features from the requirement to release nd support services mentioned below.
 
-# Planning
-- [ ] Backlog planing and Sprint Planning completed
-- [ ] Backlog planing and Sprint Planning completed
+## Requirements
+- [ ] Gathered Todo's & Feature requests and elaborated to high clarity 
+## Planning
+- [ ] Backlog planning and Sprint Planning completed
 - [ ] Organized Deliverables by Milestones by grouping fixes and enhancements
-- [ ] Reviewed he milestones with the Stakeholders and got approval
-# Reviewing #
+- [ ] Grooming Milestone stories and estimating a general ballpark for the milestone stories
+## Reviewing 
 - [ ] Performed Deep dive meetings with key stakeholders
 - [ ] Release packaging and documentation with release notes 
-- [ ] RTM - the artifacts are all released and sales/client teams have been trained
+- [ ] RTM - the artefacts are all released and sales/client teams have been trained
+## Support
+- [ ] Performed regular activity of planning and managing weekly work with Client
