@@ -15,6 +15,9 @@ TASKS: Forgetting the new feature from the requirement to breakdown into deliver
 ## Approved
 - [ ] Customer / Stakeholder reviewing our understanding and approving our design
 - [ ] Planned and Estimated the stories and effort to build feature
+## Tasked
+- [ ] Add a list of tasks that need to be done for the feature
+
 ## Prioritized
 - [ ] Prioritized the feature milestone and assigned all stories 
 
