@@ -1,13 +1,4 @@
----
-name: Issue Ticket
-about: Create a ticket to report a bug or support work
-title: "[ticket]"
-labels: i:ticket
-assignees: ''
-
----
-
-ame: Bug Report
+name: Bug Report
 description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
