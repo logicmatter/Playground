@@ -2,3 +2,5 @@ UI Elements
 Angular
 Reacts
 js
+HTML
+CSS
