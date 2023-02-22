@@ -1,25 +1,21 @@
 ---
 name: Feature Request
-about: Suggest an idea for this project
+about: Record new features only
 title: "[feature]"
-labels: i:feature
+labels: "type:feature, platform, pm:framework,task:other,priority:tbd,severity:normal"
 assignees: ''
 
 ---
 
-TASKS: Forgetting the new feature from the requirement to breakdown into deliverables and then assign to milestone
+*Must have the following*
 
-## Analized
-- [ ] Refine and define the story or use case
-- [ ] Designing Mockups, design notes and/or prototype to get strong clarity
-## Approved
-- [ ] Customer / Stakeholder reviewing our understanding and approving our design
-- [ ] Planned and Estimated the stories and effort to build feature
-## Tasked
-- [ ] Add a list of tasks that need to be done for the feature
-
-## Prioritized
-- [ ] Prioritized the feature milestone and assigned all stories 
+# What?
+The usecase being implemented
 
 
-----
+# How?
+The UX / design and other details of the implementation
+
+
+# Which?
+list of components being refactored or re-written or new component being added by this implemnentation
