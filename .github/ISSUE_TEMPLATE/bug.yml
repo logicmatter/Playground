@@ -2,7 +2,7 @@ name: Bug Report
 description: File a bug report
 title: "[Bug]: "lmsupport@logicmatter.com"
 labels: ["bug", "triage"]
-assignees: ""
+assignees: "kiranh@logicmatter.com"
 body:
   - type: markdown
     attributes:
