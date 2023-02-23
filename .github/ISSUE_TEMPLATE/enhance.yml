@@ -1,7 +1,7 @@
 name: Enhancements
 description: This define changes to the system with no change to the system functionality
 title: "[enhance] "
-  labels: [type:enhance, platform]
+ labels: [type:enhance, platform]
 body:
 - type: dropdown
   attributes:
