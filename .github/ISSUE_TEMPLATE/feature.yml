@@ -2,7 +2,6 @@ name: 🧩 Feature
 description: This describles implementation feature
 title: "[feature] "
 labels: [feature, platform, month]
-labels: "platform"
 body:
   - type: dropdown
     attributes:
