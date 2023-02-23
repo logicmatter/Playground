@@ -3,23 +3,23 @@ description: This is a requirement ticket
 title: "[story] <title>"
 labels: [story, Needs Team triage]
 body:
-- type: checkboxes
+ - type: checkboxes
   attributes:
    - label: I need some clarity to implement this story
    - label: Yes I ready to implement this story
-- type: textarea
+ - type: textarea
   attributes:
     label: User scenario
     description: A concise description of what you're experiencing.
   validations:
     required: true
-- type: textarea
+ - type: textarea
   attributes:
     label: Expected design for implementation
     description: A concise description of what you expected to happen.
   validations:
     required: false
-- type: textarea
+ - type: textarea
   attributes:
     label: Steps to approach implementation
     description: Steps to guide the implementation.
@@ -30,7 +30,7 @@ body:
       4. Tenant configuration may also be required before user can use the feature
   validations:
     required: true
-- type: textarea
+ - type: textarea
   attributes:
     label: Release-Target
     description: |
