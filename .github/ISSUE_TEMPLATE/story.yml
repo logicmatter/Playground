@@ -5,7 +5,7 @@ labels: [story, Needs Team triage]
 body:
 - type: checkboxes
   attributes:
-   label: I need some clarity to implement this story
+   - label: I need some clarity to implement this story
    - label: Yes I ready to implement this story
 - type: textarea
   attributes:
