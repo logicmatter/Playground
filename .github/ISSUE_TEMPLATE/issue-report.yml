@@ -1,7 +1,7 @@
-name: 🧩 Issue
-description: File a bug/issue
-title: "[BUG] <title>"
-labels: [Bug, Needs Triage]
+name: 🧩 Issue Ticket
+description: An activity or requirement or configuration requirements, sysops or devops tasks
+title: "[story]"
+labels: [type:activity,status:NEW,platform]
 body:
 - type: checkboxes
   attributes:
