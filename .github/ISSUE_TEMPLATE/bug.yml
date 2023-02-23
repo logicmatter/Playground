@@ -1,5 +1,5 @@
-name: Bug Report
+name: Bug
 description: File a bug report
-title: "[Bug]: "lmsupport@logicmatter.com"
+title: "[Bug]:"
 labels: ["bug", "triage"]
 body:
