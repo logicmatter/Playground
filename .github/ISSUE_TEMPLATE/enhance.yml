@@ -1,6 +1,3 @@
-name: "Enhancements"
- description: This define changes to the system with no change to the system functionality
- labels: [type:enhance, platform]
 - type: textarea
   attributes:
     label: Operating System
