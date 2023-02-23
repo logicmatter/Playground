@@ -1,7 +1,8 @@
 name: 🧩 Story
 description: This is a requirement ticket
 title: "[story] "
-labels: "[type:story, platform]"
+labels: "type:story"
+labels: "platform"
 body:
   - type: dropdown
     attributes:
