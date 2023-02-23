@@ -1,120 +1,17 @@
-name: 🧩 reqiorement
+name: 🧩 Story
 description: This is a requirement ticket
-title: "[story] <title>"
-labels: [story, Needs Team triage]
+title: "[story] "
+labels: [type:story, platform]
 body:
-type: dropdown
-  attributes:
-    label: Platform Version
-    description: What version of platform 
-    options:
-      - PMFW 3.0.x (Default)
-      - PMFW 3.1.x
-      - PMFW 3.2.x
-      - PMFW 3.3.x
-      - PMFW 3.4.x
-  validations:
-    required: true
-type: dropdown
-  attributes:
-    label: Solution Version
-    description: What version of solution
-    options:
-      - BMSv3-General (Default)
-      - BMSv3-Custo
-      - OEMv3 General
-      - OEMv3-Customi
-      - WMSv3-General
-      - WMSv3-Custom
-      - PMFW-Solution-Other
-  validations:
-    required: true
-- type: dropbox
-  attributes:
-    label: I need some clarity to implement this story
-    - label: Yes I ready to implement this story
-- type: textarea
-  attributes:
-    label: User scenario
-    description: A concise description of what you're experiencing.
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: Expected design for implementation
-    description: A concise description of what you expected to happen.
-  validations:
-    required: false
-- type: checkboxes
-  attributes:
-    label: I need some clarity to implement this story
-    - label: Yes I ready to implement this story
-- type: textarea
-  attributes:
-    label: User scenario
-    description: A concise description of what you're experiencing.
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: Expected design for implementation
-    description: A concise description of what you expected to happen.
-  validations:
-    required: false
-- type: textarea
-  attributes:
-    label: Steps to approach implementation
-    description: Steps to guide the implementation.
-    placeholder: |
-      1. Platform API or framework changes
-      2. Portal changes to support story
-      3. Solution changes needed to support this functionality
-      4. Tenant configuration may also be required before user can use the feature
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: Release-Target
-    description: |
-      examples:
-        - **PMFW**: 3.0
-        - **PMFW**: v3.1
-        - **PMFW**: v3.2
-        - **PMFW**: v3.3
-        - **PMFW**: v3.4
-        - **PMFW**: v3.5
-        - **PMFW**: v3.0
-        - **OEM**: v3.0.patch_1
-        - **OEM**: v3.0.patch_2
-        - **OEM**: v3.0.patch_3
-        - **OEM**: v3.0.patch_4
-        - **OEM**: v3.0.patch_5
-        - **OEM**: v3.1.patch_1
-        - **OEM**: v3.2.patch_2
-        - **OEM**: v3.3.patch_3
-        - **OEM**: v3.4.patch_4
-        - **OEM**: v3.5.patch_5
-        - **BMS**: v3.0.patch_1
-        - **BMS**: v3.0.patch_2
-        - **BMS**: v3.0.patch_3
-        - **BMS**: v3.0.patch_4
-        - **BMS**: v3.0.patch_5
-        - **BMS**: v3.1.patch_1
-        - **BMS**: v3.2.patch_2
-        - **BMS**: v3.3.patch_3
-        - **BMS**: v3.4.patch_4
-        - **BMS**: v3.5.patch_5
-        - **WMS**: v3.0.patch_1
-        - **WMS**: v3.0.patch_2
-        - **WMS**: v3.1.patch_1
-        - **WMS**: v3.1.patch_2
-        - **PMFW**: 3.3
-        - **PMFW**: 3.4
-    value: |
-        - PMFW:
-        - OEM:
-        - BMS:
-        - WMS:
-    render: markdown
-  validations:
-    required: false
+  - type: dropdown
+    attributes:
+      label: Platform Version
+      description: What version of platform 
+      options:
+        - PMFW 3.0.x (Default)
+        - PMFW 3.1.x
+        - PMFW 3.2.x
+        - PMFW 3.3.x
+        - PMFW 3.4.x
+      validations:
+        required: true
