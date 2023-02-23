@@ -1,7 +1,7 @@
-name: 🧩 Story
-description: This is a requirement ticket
-title: "[story] "
-labels: "type:story"
+name: 🧩 Feature
+description: This describles implementation feature
+title: "[feature] "
+labels: "feature, platform, month"
 labels: "platform"
 body:
   - type: dropdown
