@@ -13,5 +13,3 @@ body:
         - PMFW 3.2.x
         - PMFW 3.3.x
         - PMFW 3.4.x
-      validations:
-        required: true
