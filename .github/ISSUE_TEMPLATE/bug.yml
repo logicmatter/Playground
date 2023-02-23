@@ -3,7 +3,4 @@ description: File a bug report
 title: "[Bug]: "lmsupport@logicmatter.com"
 labels: ["bug", "triage"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
+
