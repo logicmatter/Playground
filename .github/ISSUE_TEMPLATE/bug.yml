@@ -4,6 +4,23 @@ title: "[bug]: "
 labels: ["bug", "triage"]
 assignees: lmsupport@logicmatter.com
 body:
+- type: dropdown
+  id: b_where
+  attributes:
+    label: Where is the issue found?
+    options:
+      - PMPortal
+        labels: pmportal
+      - PMManager
+        labels: pmmanager
+      - WMS
+        labels: wms
+      - BMS
+        labels: bms
+      - OEM
+        labels: oem        
+  validations:
+    required: true  
   - type: textarea
     id: b_what
     attributes:
