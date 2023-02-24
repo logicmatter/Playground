@@ -12,7 +12,6 @@ body:
       placeholder: ex. [bug] The scheduler fails on long processing raw data
     validations:
       required: true
-      labels: portal
   - type: textarea
     id: what-happened
     attributes:
