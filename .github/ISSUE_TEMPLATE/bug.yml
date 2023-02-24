@@ -5,31 +5,24 @@ labels: ["bug", "triage"]
 assignees:
   - octocat
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
-  - type: dropdown
+- type: dropdown
   attributes:
     label: "Operating System"
     description: |-
       What Operating System do you use?
       Make sure to also include the version in the text field below.
     multiple: false
-      options:
-        - label: "Windows"
-          fields:
-            - placeholder: "Version"
-            - label: "Mac"
-          fields:
-        -   placeholder: "Version"
-            - label: "Linux"
-        
+    options:
+      - label: "Windows"
+        fields:
+        - placeholder: "Version"
+      - label: "Mac"
+        fields:
+        - placeholder: "Version"
+      - label: "Linux"
+        fields:
+        - placeholder: "Distribution"
+        - placeholder: "Version"
+      - label: "Other"
+        fields:
+        - placeholder: "Operating System"
