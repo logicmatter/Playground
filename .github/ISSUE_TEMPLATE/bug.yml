@@ -24,17 +24,12 @@ body:
       What Operating System do you use?
       Make sure to also include the version in the text field below.
     multiple: false
-    options:
-      - label: "Windows"
-        fields:
-        - placeholder: "Version"
-      - label: "Mac"
-        fields:
-        - placeholder: "Version"
-      - label: "Linux"
-        fields:
-        - placeholder: "Distribution"
-        - placeholder: "Version"
-      - label: "Other"
-        fields:
-        - placeholder: "Operating System"
+      options:
+        - label: "Windows"
+          fields:
+            - placeholder: "Version"
+            - label: "Mac"
+          fields:
+        -   placeholder: "Version"
+            - label: "Linux"
+        
