@@ -10,9 +10,7 @@ body:
       label: Where is the issue found?
       options:
         - PMPortal
-        labels: pmportal
         - PMManager
-        labels: pmmanager
         - WMS
         - BMS
         - OEM
