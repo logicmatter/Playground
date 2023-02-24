@@ -5,7 +5,7 @@ labels: ["bug", "triage"]
 assignees: lmsupport@logicmatter.com
 body:
   - type: input
-    id: Brief description
+    id: bug_id
     attributes:
       label: What is the issue
       description: Give a brief description for the bug
