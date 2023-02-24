@@ -5,27 +5,17 @@ labels: ["bug", "triage"]
 assignees: lmsupport@logicmatter.com
 body:
   - type: input
-    id: bug_id
+    id: b_what
     attributes:
       label: What is the issue
-      description: Give a brief description for the bug
+      description: Give a description for the bug
       placeholder: ex. [bug] The scheduler fails on long processing raw data
     validations:
       required: true
   - type: textarea
-    id: what-happened
+    id: b_how
     attributes:
-      label: Error detials and steps to reproduce
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: |-
-          ## Screenshots
-          
-          ## Steps to reproduce the issue.
-          
-          1.
-          2.
-          3.
-          ----      
+      label: Enter detail steps to reproduce and/or screenshots
+      description: Add screenshots or details on the issue steps
     validations:
       required: true
