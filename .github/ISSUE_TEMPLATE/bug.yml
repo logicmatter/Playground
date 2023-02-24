@@ -1,28 +1,14 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
-assignees:
-  - octocat
 body:
-- type: dropdown
+- type: textarea
+  id: repro
   attributes:
-    label: "Operating System"
-    description: |-
-      What Operating System do you use?
-      Make sure to also include the version in the text field below.
-    multiple: false
-    options:
-      - label: "Windows"
-        fields:
-        - placeholder: "Version"
-      - label: "Mac"
-        fields:
-        - placeholder: "Version"
-      - label: "Linux"
-        fields:
-        - placeholder: "Distribution"
-        - placeholder: "Version"
-      - label: "Other"
-        fields:
-        - placeholder: "Operating System"
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
