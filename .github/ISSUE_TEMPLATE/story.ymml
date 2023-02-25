@@ -1,10 +1,8 @@
----
 name: Story
 description: This is a requirement ticket
-title: "[story] <title>"
-labels:
-  - type:story
-  - platform
+title: "[story] "
+labels: [story,platform,normal,tbd]
+assignee: lmsupport@logicmatter.com
 body:
   - type: dropdown
     attributes:
