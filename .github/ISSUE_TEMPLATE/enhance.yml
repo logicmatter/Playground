@@ -76,6 +76,4 @@ body:
       2.
       3.
       ...
-render: bash
-validations: null
-required: true
+
