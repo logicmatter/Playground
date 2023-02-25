@@ -6,7 +6,7 @@ body:
     attributes:
       label: Location of the Issue
       description: Where is the project located?
-        multiple: true
+      multiple: true
       options:
         - Platform
         - Portal
