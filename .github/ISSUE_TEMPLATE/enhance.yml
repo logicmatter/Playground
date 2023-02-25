@@ -44,12 +44,14 @@ body:
   validations:
     required: true
 - type: markdown
+  id: id-what
   attributes:
-    value: >
-      Before opening a bug report, please search for the behaviour in the
-      existing issues. 
+    value: |
+      The list of items being changed 
+
       ---
-      Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
+      
+      Thanks
 - type: input
   id: os
   attributes:
@@ -66,15 +68,3 @@ body:
     placeholder: v8.6.1
   validations:
     required: true
-- type: input
-  id: php
-  attributes: null
-  label: PHP Version
-  description: Please provide the full PHP version that is powering Tinkerwell.
-  placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
-  validations:
-    required: true
-
-
-
-
