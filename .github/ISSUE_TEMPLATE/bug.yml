@@ -1,6 +1,6 @@
 name: 🐞Bug
 description: File a bug or defect report against a release
-title: "[bug]: <title>"
+title: "🐞[bug]: "
 labels: [bug, tbd]
 assignees:
   - "support-logicmatter"
