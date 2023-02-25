@@ -16,28 +16,6 @@ body:
       - PMFW 3.3.x
       - PMFW 3.4.x
       - Other
-- type: markdown
-  attributes:
-    value: |
-
-      ---
-
-
-- type: input
-  id: os
-  attributes:
-    label: What is the issue
-    description: "Describe the issue or activity being performed or story being defined"
-    placeholder: "e.g updating the template"
-  validations:
-    required: true  
-- type: textarea
-  id: php
-  attributes:
-    label: Detail Explaination
-    description: "Send screenshots, mockups or steps being performed."
-  validations:
-    required: true
 - type: dropdown
   id: location
   attributes:
@@ -75,7 +53,28 @@ body:
       - Other
   validations:
     required: true
+- type: markdown
+  attributes:
+    value: |
 
+      ---
+
+
+- type: input
+  id: os
+  attributes:
+    label: What is the issue
+    description: "Describe the issue or activity being performed or story being defined"
+    placeholder: "e.g updating the template"
+  validations:
+    required: true  
+- type: textarea
+  id: php
+  attributes:
+    label: Detail Explaination
+    description: "Send screenshots, mockups or steps being performed."
+  validations:
+    required: true
 
 
 
