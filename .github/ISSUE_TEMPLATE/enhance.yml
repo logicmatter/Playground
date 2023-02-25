@@ -1,6 +1,7 @@
 name: Enhance
-label: "[enhance]"
 description: Ticket describes changes to system without effecting the functionality implemented
+title: "[enhance]: "
+labels: ["enhance","tbd", "triage"]
 body:
 - type: dropdown
   id: id-area
