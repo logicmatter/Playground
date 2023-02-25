@@ -21,28 +21,28 @@ body:
     description: What version of platform 
     multipart: true
     options:
-      - analyzing
-      - approving
-      - configuring
-      - debugging
-      - demonstrating
-      - designing
-      - documenting
-      - installing
-      - meeting
-      - migrating
-      - nonitoring
-      - onboarding
-      - patching
-      - planning
-      - prototyping
-      - provisioning
-      - releasing
-      - researching
-      - reviewing
-      - testing
-      - triaging
-      - upgrading
+    - analyzing
+    - approving
+    - configuring
+    - debugging
+    - demonstrating
+    - designing
+    - documenting
+    - installing
+    - meeting
+    - migrating
+    - nonitoring
+    - onboarding
+    - patching
+    - planning
+    - prototyping
+    - provisioning
+    - releasing
+    - researching
+    - reviewing
+    - testing
+    - triaging
+    - upgrading
 - type: dropdown
   attributes:
     label: Framework Release
