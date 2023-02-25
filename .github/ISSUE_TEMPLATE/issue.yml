@@ -26,9 +26,9 @@ body:
 - type: input
   id: os
   attributes:
-    label: Operating system
-    description: "Which operating system do you use? Please provide the version as well."
-    placeholder: "macOS Big Sur 11.5.2"
+    label: What is the issue
+    description: "Describe the issue or activity being performed or story being defined"
+    placeholder: "e.g updating the template"
   validations:
     required: true  
 - type: input
@@ -39,27 +39,51 @@ body:
     placeholder: "v8.6.1"
   validations:
     required: true
-- type: input
+- type: textarea
   id: php
   attributes:
-    label: PHP Version
-    description: "Please provide the full PHP version that is powering Tinkerwell."
-    placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
+    label: Detail Explaination
+    description: "Send screenshots, mockups or steps being performed."
+    placeholder: "     "
   validations:
     required: true
 - type: dropdown
   id: location
   attributes:
-    label: Project Location
-    description: Where is the project located?
+    label: Product Location
+    description: Where is the action being taken?
+    multiple: true
     options:
-      - Local
-      - Remote
-      - Somewhere else (please specify in the description!)
+      - Unknown (Default)
+      - Platform
+      - Portal
+      - Gateway
+      - Connector
+      - Flow
+      - Scheduler
+      - Template
+      - App
+      - DatabaseServer
+      - Webserver
+      - ReportServer
+      - PMCloud
+      - Builder
   validations:
     required: true
-
-
+- type: dropdown
+  id: id-sys
+  attributes: 
+    label: Solution Version
+    description: What version of the solution
+    options:
+      - All-Domain (Default)
+      - BMS-Solution
+      - OEM-Solution
+      - WMS-Solution
+      - Custom-Domain
+      - Other
+  validations:
+    required: true
 
 
 
