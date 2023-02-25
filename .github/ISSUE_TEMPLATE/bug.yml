@@ -8,7 +8,7 @@ body:
 - type: dropdown
   id: id-area
   attributes: 
-    label: Comonent-Refactored
+    label: Framework Components
     description: Which components are likely producting this defect?
     multiple: true
     options:
@@ -61,8 +61,8 @@ body:
 - type: textarea
   id: b_how
   attributes:
-    label: How?
-    description: Add screenshots and describe how to reproduce this issue
+    label: Bug Description
+    description: Describe the problem add screenshots and describe how to reproduce this issue
   validations:
     required: true
 - type: checkboxes
