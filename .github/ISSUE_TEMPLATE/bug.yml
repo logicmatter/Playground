@@ -1,8 +1,7 @@
-name: Bug Report
-description: File a bug report
+name: Bug
+description: File a bug or defect report against a release
 title: "[bug]: <title>"
-labels: "[bug, tbd]"
-assignees: lmsupport@logicmatter.com
+labels: [bug, tbd]
 body:
 - type: textarea
   id: b_what
