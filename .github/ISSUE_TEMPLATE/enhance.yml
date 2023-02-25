@@ -43,6 +43,14 @@ body:
       - Custom-Patch
   validations:
     required: true
+- type: checkboxes
+  id: id-impact
+  attributes:
+    label: Impact of change
+    description: Where would the impact be after this change is made
+    options:
+      - label: I agree to follow this project's Code of Conduct
+        required: true
 - type: markdown
   id: id-where
   attributes:
