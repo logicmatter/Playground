@@ -35,6 +35,7 @@ body:
   attributes: 
     label: Solution componts
     description: What solution specific components have this issue? 
+    multiple: true
     options:
       - Report-Template
       - Dashboard-Template
