@@ -24,3 +24,25 @@ body:
       - Builder
   validations:
     required: true
+- type: dropdown
+  id: id-sys
+  attributes: 
+  label: Solution Version
+  description: What version of the solution
+  multipart: false
+  options:
+    - Other-Soln (Default)
+    - BMS-Soln-Release
+    - OEM-Soln-Release
+    - WMS-Soln-Release
+    - BMS-Gen-Patch    
+    - OEM-Gen-Patch
+    - WMS-Gen-Patch
+    - Custom-Release    
+    - Custom-Patch
+  validations:
+    required: true
+
+
+
+
