@@ -2,19 +2,104 @@ name: Bug
 description: File a bug or defect report against a release
 title: "[bug]: <title>"
 labels: [bug, tbd]
+assignees:
+  - "support-logicmatter"
 body:
-- type: textarea
-  id: b_what
-  attributes:
-    label: The issue
-    description: Describe the issue in detail
-    placeholder: ex. The scheduler fails on long processing raw data
+- type: dropdown
+  id: id-area
+  attributes: 
+    label: Comonent-Refactored
+    description: Which components are likely producting this defect?
+    multiple: true
+    options:
+      - Unknown (Default)
+      - Platform
+      - Portal
+      - Gateway
+      - Connector
+      - Scheduler
+      - Flow
+      - App
+      - SLA
+      - Manager
+      - Template
+      - DatabaseServer
+      - Webserver
+      - ReportServer
+      - PMCloud
+      - Builder
   validations:
     required: true
-  - type: textarea
-    id: b_how
-    attributes:
-      label: How?
-      description: Add screenshots and describe how to reproduce this issue
-    validations:
-      required: true
+- type: dropdown
+  id: id-sys
+  attributes: 
+    label: Solution componts
+    description: What solution specific components have this issue? 
+    options:
+      - Report-Template
+      - Dashboard-Template
+      - Import-Template
+      - Transform-Template
+      - Export-Template
+      - Maintin-Template
+      - SLA-Template
+      - Adhoc-Template
+      - Datapicker-Config
+      - Lookup-Sheet
+      - Subscription-Sheet
+      - Datasource-Config
+      - Defined-Schedule
+      - Defined-Report
+      - Core-Parameters
+      - Query-Performance
+      - Report-Performance
+      - User-Security
+      - License
+      - Unknown (Default)
+  validations:
+    required: true
+- type: textarea
+  id: b_how
+  attributes:
+    label: How?
+    description: Add screenshots and describe how to reproduce this issue
+  validations:
+    required: true
+- type: checkboxes
+  id: id-impact
+  attributes:
+    label: Impact of Release changes
+    description: Where would the impact be after this change is made
+    options:
+      - label: This has no impact on the production.    
+      - label: Requires Solution patch or release.
+      - label: Requires data-migration scripts or steps on production.
+      - label: Requires production configuration (lookup, defined-import/transform, defined-reports, datasource, etc.
+  validations:      
+        required: true
+- type: markdown
+  id: id-where
+  attributes:
+    value: >
+      What is being done?
+      ---      
+- type: textarea
+  id: id-what
+  attributes:
+    label: Changes made
+    description: What changes are being made?
+    placeholder: Describe the changes being made in various components to support this enhancements.
+    value: >
+
+      ----
+      
+      1.
+      
+      2.
+      
+      3.
+      
+      ...
+      
+  validations:
+    required: true
