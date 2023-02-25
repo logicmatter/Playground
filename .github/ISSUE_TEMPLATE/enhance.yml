@@ -4,11 +4,22 @@ body:
   - type: dropdown
     id: location
     attributes:
-      label: Project Location
+      label: Location of the Issue
       description: Where is the project located?
       options:
-        - Local
-        - Remote
+        - Platform
+        - Portal
+        - Gateway
+        - Connector
+        - Flow
+        - Scheduler
+        - Template
+        - App
+        - DatabaseServer
+        - Webserver
+        - ReportServer
+        - PMCloud
+        - Builder
         - Somewhere else (please specify in the description!)
     validations:
       required: true
