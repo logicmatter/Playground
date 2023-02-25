@@ -44,7 +44,6 @@ body:
   attributes:
     label: Detail Explaination
     description: "Send screenshots, mockups or steps being performed."
-    placeholder: "     "
   validations:
     required: true
 - type: dropdown
