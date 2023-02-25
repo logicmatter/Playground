@@ -4,5 +4,5 @@ description: Ticket describes changes to system without effecting the
 body:
   - type: markdown
     attributes:
-      value: >
+      value: |
         ----
