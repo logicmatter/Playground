@@ -7,19 +7,29 @@ body:
   - type: dropdown
     id: b_where
     attributes: ###
-      label: Where is the issue found?
+      label: Components
+       multiple: 
       options:
-        - PMPortal
-        - PMManager
-        - WMS
-        - BMS
-        - OEM
+        - Platform
+        - API
+        - Portal
+        - Manager
+        - Flow
+        - Apps
+        - Templates
+        - Builder
+        - CLI
+        - ReportingService
+        - DatabaseServer
+        - CloudInfra
+        - Security
+        - Unknown
     validations:
       required: true  
   - type: textarea
     id: b_what
     attributes:
-      label: What?
+      label: The issue
       description: Describe the issue in detail
       placeholder: ex. The scheduler fails on long processing raw data
     validations:
