@@ -1,4 +1,4 @@
-name: Bug
+name: 🐞Bug
 description: File a bug or defect report against a release
 title: "[bug]: <title>"
 labels: [bug, tbd]
