@@ -1,6 +1,10 @@
 name: Enhance
 description: Ticket describes changes to system without effecting the functionality implemented
 body:
+- type: markdown
+    attributes:
+      value: |
+        ----
   - type: dropdown
     id: location
     attributes: 
@@ -24,7 +28,11 @@ body:
         - Somewhere else (please specify in the description!)
     validations:
       required: true
-  - type: markdown
+- type: markdown
+    attributes:
+      value: |
+        ----
+- type: markdown
     attributes:
       value: |
         Before opening a bug report, please search for the behaviour in the existing issues. 
