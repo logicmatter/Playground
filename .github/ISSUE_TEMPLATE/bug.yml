@@ -6,7 +6,7 @@ assignees: lmsupport@logicmatter.com
 body:
   - type: dropdown
     id: b_where
-    attributes:
+    attributes: ###
       label: Where is the issue found?
       options:
         - PMPortal
