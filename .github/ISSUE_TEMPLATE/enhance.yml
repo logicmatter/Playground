@@ -1,37 +1,37 @@
 name: Enhance
 description: Ticket describes changes to system without effecting the functionality implemented
 body:
-  - type: dropdown
-    id: location
-    attributes: 
-      label: Location of the Issue
-      description: Where is the project located?
-      multiple: true
-      options:
-        - Platform
-        - Portal
-        - Gateway
-        - Connector
-        - Flow
-        - Scheduler
-        - Template
-        - App
-        - DatabaseServer
-        - Webserver
-        - ReportServer
-        - PMCloud
-        - Builder
-        - Somewhere else (please specify in the description!)
-    validations:
-      required: true
-  - type: textarea
-    id: repro
-    attributes: null
-      label: Reproduction steps
-      description: How do you trigger this bug? Please walk us through it step by step.
-        value: |
-          1.
-          2.
-          3.
-          ...
+- type: dropdown
+  id: location
+  attributes: 
+    label: Location of the Issue
+    description: Where is the project located?
+    multiple: true
+    options:
+      - Platform
+      - Portal
+      - Gateway
+      - Connector
+      - Flow
+      - Scheduler
+      - Template
+      - App
+      - DatabaseServer
+      - Webserver
+      - ReportServer
+      - PMCloud
+      - Builder
+      - Somewhere else (please specify in the description!)
+  validations:
+    required: true
+- type: textarea
+  id: repro
+  attributes: null
+    label: Reproduction steps
+    description: How do you trigger this bug? Please walk us through it step by step.
+    value: |
+      1.
+      2.
+      3.
+      ...
 
