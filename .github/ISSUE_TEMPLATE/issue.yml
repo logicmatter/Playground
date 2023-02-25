@@ -15,7 +15,6 @@ body:
     - secops
     - testops
     - Other (Default)
-
 - type: dropdown
   attributes:
     label: Framework Release
