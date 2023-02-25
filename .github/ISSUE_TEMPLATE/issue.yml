@@ -5,15 +5,45 @@ labels: [activity,story,tbd]
 body:
 - type: dropdown
   attributes:
-    label: Worked on
+    label: Worked On
     description: What action has been taken or describe the user story
     options:
     - dataops
     - sysops
     - devops
+    - appdev
     - secops
     - testops
     - Other (Default)
+
+- type: dropdown
+  attributes:
+    label: Framework Release
+    description: What version of platform 
+    multipart: true
+    options:
+      - analyzing
+      - approving
+      - configuring
+      - debugging
+      - demonstrating
+      - designing
+      - documenting
+      - installing
+      - meeting
+      - migrating
+      - nonitoring
+      - onboarding
+      - patching
+      - planning
+      - prototyping
+      - provisioning
+      - releasing
+      - researching
+      - reviewing
+      - testing
+      - triaging
+      - upgrading
 - type: dropdown
   attributes:
     label: Framework Release
