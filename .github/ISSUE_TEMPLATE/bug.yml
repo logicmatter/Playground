@@ -1,6 +1,6 @@
 name: Bug Report
 description: File a bug report
-title: "[bug]: Title"
+title: "[bug]: <title>"
 labels: "[bug, tbd]"
 assignees: lmsupport@logicmatter.com
 body:
