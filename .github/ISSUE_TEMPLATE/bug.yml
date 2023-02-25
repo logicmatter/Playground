@@ -31,3 +31,25 @@ body:
       description: Add screenshots and describe how to reproduce this issue
     validations:
       required: true
+- type: markdown
+  attributes:
+    value: "## Thank you for contributing to our project!"
+- type: markdown
+  attributes:
+    value: |
+      Thanks for taking the time to fill out this bug report.        
+  - type: dropdown
+    attributes: 
+      label: Solution Version
+      description: What version of the solution
+      options:
+        - BMS-Patch-General
+        - BMS-Custom-Patch
+        - OEM-Patch-General
+        - OEM-Custom-Patch
+        - WMS-Patch-General
+        - WMS-Custom-Patch        
+        - Other-Solution
+      validations:
+        required: true
+
