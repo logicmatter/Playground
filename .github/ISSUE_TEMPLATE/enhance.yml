@@ -29,7 +29,6 @@ body:
   attributes: 
     label: Solution Version
     description: What version of the solution
-    multipart: false
     options:
       - Other-Soln (Default)
       - BMS-Soln-Release
