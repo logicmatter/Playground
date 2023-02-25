@@ -1,8 +1,8 @@
-name: ⛽ Enhance
+name: ✂Enhance
 description: Ticket describes changes to system without effecting the functionality implemented
 assignees:
   - "support-logicmatter"
-title: "[enhance]: "
+title: "✂[enhance]: "
 labels: ["enhance","tbd", "triage"]
 body:
 - type: dropdown
