@@ -24,18 +24,3 @@ body:
       - Builder
   validations:
     required: true
-  - type: dropdown
-    id: id-sys
-    attributes: 
-    label: Solution Version
-    description: What version of the solution
-    options:
-      - BMS-Patch-General (Default)
-      - BMS-Custom-Patch
-      - OEM-Patch-General
-      - OEM-Custom-Patch
-      - WMS-Patch-General
-      - WMS-Custom-Patch        
-      - Other-Solution
-    validations:
-      required: true
