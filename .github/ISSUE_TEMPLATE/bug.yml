@@ -10,6 +10,7 @@ type: dropdown
     description: What version of our software are you running?
     multiple: true
     options:
+      - Unknown (Default)
       - Platform
       - API
       - Portal
@@ -23,7 +24,6 @@ type: dropdown
       - DatabaseServer
       - CloudInfra
       - Security
-      - Unknown
   validations:
     required: true  
   - type: textarea
