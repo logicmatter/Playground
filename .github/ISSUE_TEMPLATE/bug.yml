@@ -5,25 +5,25 @@ labels: "[bug, tbd]"
 assignees: lmsupport@logicmatter.com
 body:
   - type: dropdown
-  attributes:
-    label: Version
-    description: What version of our software are you running?
-    multiple: true
-    options:
-      - Unknown (Default)
-      - Platform
-      - API
-      - Portal
-      - Manager
-      - Flow
-      - Apps
-      - Templates
-      - Builder
-      - CLI
-      - ReportingService
-      - DatabaseServer
-      - CloudInfra
-      - Security
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      multiple: true
+      options:
+        - Unknown (Default)
+        - Platform
+        - API
+        - Portal
+        - Manager
+        - Flow
+        - Apps
+        - Templates
+        - Builder
+        - CLI
+        - ReportingService
+        - DatabaseServer
+        - CloudInfra
+        - Security
   validations:
     required: true  
 - type: textarea
