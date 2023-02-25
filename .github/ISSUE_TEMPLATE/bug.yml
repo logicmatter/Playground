@@ -41,6 +41,3 @@ type: dropdown
       description: Add screenshots and describe how to reproduce this issue
     validations:
       required: true
-- type: markdown
-  attributes:
-    value: "## Thank you for contributing to our project!"
