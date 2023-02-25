@@ -4,9 +4,4 @@ description: Ticket describes changes to system without effecting the
 body:
   - type: markdown
     attributes:
-      value: |
-        ## Issue Area
-        
-        ----
-        
-        ## Description
+      value: "## Issue Area"
