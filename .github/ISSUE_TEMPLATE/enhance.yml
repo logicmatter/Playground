@@ -1,6 +1,17 @@
 name: Enhance
 description: Ticket describes changes to system without effecting the functionality implemented
 body:
+  - type: dropdown
+    id: location
+    attributes:
+      label: Project Location
+      description: Where is the project located?
+      options:
+        - Local
+        - Remote
+        - Somewhere else (please specify in the description!)
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |
@@ -31,16 +42,5 @@ body:
       label: PHP Version
       description: "Please provide the full PHP version that is powering Tinkerwell."
       placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
-    validations:
-      required: true
-  - type: dropdown
-    id: location
-    attributes:
-      label: Project Location
-      description: Where is the project located?
-      options:
-        - Local
-        - Remote
-        - Somewhere else (please specify in the description!)
     validations:
       required: true
