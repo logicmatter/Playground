@@ -3,8 +3,8 @@ description: Ticket describes changes to system without effecting the functional
 body:
 - type: dropdown
   id: id-area
-  attributes: 
-    label: Location of the Issue
+  attributes: |
+    label: Comonent-Refactored
     description: Which components are likely refactored for this enhancement ?
     multiple: true
     options:
