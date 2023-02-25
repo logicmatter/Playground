@@ -44,18 +44,17 @@ body:
   validations:
     required: true
 - type: markdown
-  id: id-what
+  id: id-where
   attributes:
     value: >
-      ## The list of items being changed 
-
+      What is being done?
       ---
       
       Thanks
 - type: textarea
-  id: id-where
+  id: id-what
   attributes:
-    label: Operati
+    label: "## Changes made:"
     description: Which operating system do you use? Please provide the version as well.
     placeholder: macOS Big Sur 11.5.2
   validations:
