@@ -1,14 +1,14 @@
 name: Bug Report
 description: File a bug report
 title: "[bug]: "
-labels: ["bug", "triage"]
+labels: ["bug", "tbd"]
 assignees: lmsupport@logicmatter.com
 body:
   - type: dropdown
     id: b_where
     attributes: ###
-      label: Components
-       multiple: 
+    label: Components
+    multiple: 
       options:
         - Platform
         - API
