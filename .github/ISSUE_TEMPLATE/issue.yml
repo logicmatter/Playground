@@ -7,13 +7,13 @@ body:
   attributes:
     label: Worked on
     description: What action has been taken or describe the user story
-      options:
-      - dataops
-      - sysops
-      - devops
-      - secops
-      - testops
-      - Other (Default)
+    options:
+    - dataops
+    - sysops
+    - devops
+    - secops
+    - testops
+    - Other (Default)
 - type: dropdown
   attributes:
     label: Framework Release
