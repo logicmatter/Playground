@@ -1,7 +1,7 @@
 name: Enhance
 description: Ticket describes changes to system without effecting the functionality implemented
 assignees:
-  - lmsupport@logicmatter.com
+  - "support-logicmatter"
 title: "[enhance]: "
 labels: ["enhance","tbd", "triage"]
 body:
