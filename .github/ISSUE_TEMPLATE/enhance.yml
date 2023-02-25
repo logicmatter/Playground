@@ -24,14 +24,3 @@ body:
         - Builder
     validations:
       required: true
-- type: textarea
-  id: repro
-  attributes: null
-    label: Reproduction steps
-    description: How do you trigger this bug? Please walk us through it step by step.
-    value: |
-      1.
-      2.
-      3.
-      ...
-
