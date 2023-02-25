@@ -47,15 +47,15 @@ body:
   id: id-what
   attributes:
     value: >
-      The list of items being changed 
+      ## The list of items being changed 
 
       ---
       
       Thanks
-- type: input
-  id: os
+- type: textarea
+  id: id-where
   attributes:
-    label: Operating system
+    label: Operati
     description: Which operating system do you use? Please provide the version as well.
     placeholder: macOS Big Sur 11.5.2
   validations:
