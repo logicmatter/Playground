@@ -48,22 +48,12 @@ body:
   attributes:
     value: >
       What is being done?
-      ---
-      
-      Thanks
+      ---      
 - type: textarea
   id: id-what
   attributes:
-    label: "## Changes made:"
-    description: Which operating system do you use? Please provide the version as well.
-    placeholder: macOS Big Sur 11.5.2
-  validations:
-    required: true
-- type: input
-  id: laravel
-  attributes:
-    label: Laravel Version
-    description: Please provide the full Laravel version of your project.
-    placeholder: v8.6.1
+    label: Changes made
+    description: What changes are being made?
+    placeholder: Describe the changes being made in various components to support this enhancements.
   validations:
     required: true
