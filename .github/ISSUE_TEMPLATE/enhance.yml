@@ -2,7 +2,7 @@ name: Enhance
 description: Ticket describes changes to system without effecting the functionality implemented
 body:
 - type: dropdown
-  id: location
+  id: id-area
   attributes: 
     label: Location of the Issue
     description: Where is the project located?
@@ -25,16 +25,17 @@ body:
   validations:
     required: true
   - type: dropdown
+    id: id-sys
     attributes: 
-      label: Solution Version
-      description: What version of the solution
-      options:
-        - BMS-Patch-General (Default)
-        - BMS-Custom-Patch
-        - OEM-Patch-General
-        - OEM-Custom-Patch
-        - WMS-Patch-General
-        - WMS-Custom-Patch        
-        - Other-Solution
+    label: Solution Version
+    description: What version of the solution
+    options:
+      - BMS-Patch-General (Default)
+      - BMS-Custom-Patch
+      - OEM-Patch-General
+      - OEM-Custom-Patch
+      - WMS-Patch-General
+      - WMS-Custom-Patch        
+      - Other-Solution
     validations:
       required: true
