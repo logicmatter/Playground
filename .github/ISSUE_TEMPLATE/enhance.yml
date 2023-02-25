@@ -2,9 +2,6 @@ name: Enhance
 description: Ticket describes changes to system without effecting the
   functionality implemented
 body:
-- type: markdown
-  attributes:
-    value: "Issue Area"
 - type: dropdown
   id: location
   attributes: null
