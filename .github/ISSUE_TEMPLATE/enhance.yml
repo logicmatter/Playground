@@ -45,16 +45,16 @@ body:
     validations:
       required: true
   - type: dropdown
-    attributes: 
-      label: Solution Version
-      description: What version of the solution
-      options:
-        - BMS-Patch-General
-        - BMS-Custom-Patch
-        - OEM-Patch-General
-        - OEM-Custom-Patch
-        - WMS-Patch-General
-        - WMS-Custom-Patch        
-        - Other-Solution
-      validations:
-        required: true
+      attributes: 
+        label: Solution Version
+        description: What version of the solution
+        options:
+          - BMS-Patch-General
+          - BMS-Custom-Patch
+          - OEM-Patch-General
+          - OEM-Custom-Patch
+          - WMS-Patch-General
+          - WMS-Custom-Patch        
+          - Other-Solution
+        validations:
+          required: true
