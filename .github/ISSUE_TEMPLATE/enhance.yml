@@ -1,7 +1,7 @@
 name: Enhance
 description: Ticket describes changes to system without effecting the functionality implemented
 body:
-  - type: checkbox
+  - type: dropdown
     id: location
     attributes:
       label: Location of the Issue
