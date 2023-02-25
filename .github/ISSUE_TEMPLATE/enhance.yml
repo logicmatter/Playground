@@ -61,7 +61,7 @@ body:
 - type: textarea
   id: id-what
   attributes:
-    label: Changes made
+    label: ----- \n Changes made
     description: What changes are being made?
     placeholder: Describe the changes being made in various components to support this enhancements.
   validations:
