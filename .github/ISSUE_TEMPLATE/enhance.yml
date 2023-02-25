@@ -49,7 +49,11 @@ body:
     label: Impact of change
     description: Where would the impact be after this change is made
     options:
-      - label: I agree to follow this project's Code of Conduct
+      - label: The patch or release applied would require production to be configured manually.
+      - label: The patch or release changes the data structure and requires migrating production data manually.
+      - label: This is architectural change and the platform or solution must include migration scripts for data structure in production.
+      - label: This has no impact on the production system, other than verifying testing the system works as per the use case.
+  validations:      
         required: true
 - type: markdown
   id: id-where
