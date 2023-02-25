@@ -4,7 +4,7 @@ title: "[bug]: "
 labels: "[bug, tbd]"
 assignees: lmsupport@logicmatter.com
 body:
-type: dropdown
+  - type: dropdown
   attributes:
     label: Version
     description: What version of our software are you running?
@@ -26,14 +26,14 @@ type: dropdown
       - Security
   validations:
     required: true  
-  - type: textarea
-    id: b_what
-    attributes:
-      label: The issue
-      description: Describe the issue in detail
-      placeholder: ex. The scheduler fails on long processing raw data
-    validations:
-      required: true
+- type: textarea
+  id: b_what
+  attributes:
+    label: The issue
+    description: Describe the issue in detail
+    placeholder: ex. The scheduler fails on long processing raw data
+  validations:
+    required: true
   - type: textarea
     id: b_how
     attributes:
