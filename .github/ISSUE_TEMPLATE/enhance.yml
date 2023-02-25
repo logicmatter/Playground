@@ -1,4 +1,5 @@
 name: Enhance
+label: "[enhance]"
 description: Ticket describes changes to system without effecting the functionality implemented
 body:
 - type: dropdown
