@@ -1,11 +1,12 @@
 name: Enhance
 description: Ticket describes changes to system without effecting the functionality implemented
 body:
-  - type: dropdown
+  - type: checkbox
     id: location
     attributes:
       label: Location of the Issue
       description: Where is the project located?
+        multiple: true
       options:
         - Platform
         - Portal
