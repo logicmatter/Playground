@@ -3,7 +3,7 @@ description: Ticket describes changes to system without effecting the functional
 body:
   - type: dropdown
     id: location
-    attributes: |
+    attributes: 
       label: Location of the Issue
       description: Where is the project located?
       multiple: true
@@ -56,3 +56,17 @@ body:
       placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
     validations:
       required: true
+body:
+- type: textarea
+  id: repro
+  attributes:
+    label: Reproduction steps
+    description: "How do you trigger this bug? Please walk us through it step by step."
+    value: |
+      1.
+      2.
+      3.
+      ...
+    render: bash
+  validations:
+    required: true
