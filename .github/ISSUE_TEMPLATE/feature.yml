@@ -1,6 +1,6 @@
 name: 💡Feature
 description: This describles implementation feature
-title: "[💡feature] "
+title: "💡[feature] "
 labels: [feature, tbd]
 body:
 - type: dropdown
