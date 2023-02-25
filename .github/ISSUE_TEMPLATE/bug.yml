@@ -6,7 +6,6 @@ assignees: lmsupport@logicmatter.com
 body:
   - type: dropdown
     id: b_where
-    attributes: ###
     label: Components
     multiple: 
       options:
