@@ -8,6 +8,7 @@ body:
     description: Where is the project located?
     multiple: true
     options:
+      - Unknown (Default)
       - Platform
       - Portal
       - Gateway
@@ -21,7 +22,6 @@ body:
       - ReportServer
       - PMCloud
       - Builder
-      - Somewhere else (please specify in the description!)
   validations:
     required: true
 - type: textarea
