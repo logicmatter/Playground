@@ -5,7 +5,7 @@ body:
   id: id-area
   attributes: 
     label: Location of the Issue
-    description: Where is the project located?
+    description: Which components are likely refactored for this enhancement ?
     multiple: true
     options:
       - Unknown (Default)
@@ -24,3 +24,23 @@ body:
       - Builder
   validations:
     required: true
+
+
+  - type: dropdown
+    id: id-sys
+    attributes: 
+    label: Solution Version
+    description: What version of the solution
+    options:
+      - BMS-Patch-General (Default)
+      - BMS-Custom-Patch
+      - OEM-Patch-General
+      - OEM-Custom-Patch
+      - WMS-Patch-General
+      - WMS-Custom-Patch        
+      - Other-Solution
+    validations:
+      required: true
+
+
+
