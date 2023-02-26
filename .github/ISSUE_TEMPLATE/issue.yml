@@ -43,7 +43,7 @@ body:
       - testing
       - triaging
       - upgrading
-  - type: dropdown
+- type: dropdown
   attributes:
     label: Framework Release
     description: What version of platform 
