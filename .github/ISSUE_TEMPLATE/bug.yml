@@ -92,3 +92,31 @@ body:
 
   validations:
     required: true
+- type: dropdown
+  id: id-area
+  attributes: 
+    label: Framework Components
+    description: Which components are likely producting this defect?
+    multiple: true
+    options:
+      - Unknown (Default)
+      - Platform
+      - Portal
+      - Gateway
+      - Connector
+      - Scheduler
+      - Flow
+      - App
+      - SLA
+      - Manager
+      - Template
+      - DatabaseServer
+      - Webserver
+      - ReportServer
+      - PMCloud
+      - Builder
+  validations:
+    required: true
+
+
+
