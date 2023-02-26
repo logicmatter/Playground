@@ -17,32 +17,33 @@ body:
       - Other (Default)
 - type: dropdown
   attributes:
-    label: Activity
-    description: What work was done?
-    options:
-      - analyzing
-      - approving
-      - configuring
-      - debugging
-      - demonstrating
-      - designing
-      - documenting
-      - installing
-      - meeting
-      - migrating
-      - nonitoring
-      - onboarding
-      - patching
-      - planning
-      - prototyping
-      - provisioning
-      - releasing
-      - researching
-      - reviewing
-      - testing
-      - triaging
-      - upgrading
-      - other (Default)
+      label: Activity
+      description: Which components are likely refactored for this enhancement ?
+      multiple: true
+      options:
+        - analyzing
+        - approving
+        - configuring
+        - debugging
+        - demonstrating
+        - designing
+        - documenting
+        - installing
+        - meeting
+        - migrating
+        - nonitoring
+        - onboarding
+        - patching
+        - planning
+        - prototyping
+        - provisioning
+        - releasing
+        - researching
+        - reviewing
+        - testing
+        - triaging
+        - upgrading
+        - other (Default)
 - type: dropdown
   attributes:
     label: Framework Release
