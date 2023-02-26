@@ -6,6 +6,18 @@ title: "✂[enhance]: "
 labels: ["enhance","tbd", "triage"]
 body:
 - type: dropdown
+  attributes:
+    label: Framework Release
+    description: What version of platform
+    options:
+      - PMFW 3.0.x (Default)
+      - PMFW 3.1.x
+      - PMFW 3.2.x
+      - PMFW 3.3.x
+      - PMFW 3.4.x
+  validations:
+    required: true
+- type: dropdown
   id: id-area
   attributes: 
     label: Comonent-Refactored
