@@ -75,10 +75,3 @@ body:
   attributes:
     value: |
       Describe in detail the bug ticket.
-- type: textarea
-  id: b_how
-  attributes:
-    label: Bug Description
-    description: Describe the problem add screenshots and describe how to reproduce this issue
-  validations:
-    required: true
