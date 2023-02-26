@@ -5,72 +5,72 @@ labels: [bug, tbd]
 assignees:
   - "support-logicmatter"
 body:
-  - type: dropdown
-    attributes:
-      label: Framework Release
-      description: What version of platform
-      options:
-        - PMFW 3.0.x (Default)
-        - PMFW 3.1.x
-        - PMFW 3.2.x
-        - PMFW 3.3.x
-        - PMFW 3.4.x
-    validations:
-      required: false
-  - type: dropdown
-    id: id-area
-    attributes:
-      label: Framework Components
-      description: Which components are likely producting this defect?
-      multiple: true
-      options:
-        - Unknown (Default)
-        - Platform
-        - Portal
-        - Gateway
-        - Connector
-        - Scheduler
-        - Flow
-        - App
-        - SLA
-        - Manager
-        - Template
-        - DatabaseServer
-        - Webserver
-        - ReportServer
-        - PMCloud
-        - Builder
-    validations:
-      required: true
-  - type: dropdown
-    id: id-sys
-    attributes:
-      label: Solution componts
-      description: What solution specific components have this issue?
-      multiple: true
-      options:
-        - Report-Template
-        - Dashboard-Template
-        - Import-Template
-        - Transform-Template
-        - Export-Template
-        - Maintin-Template
-        - SLA-Template
-        - Adhoc-Template
-        - Datapicker-Config
-        - Lookup-Sheet
-        - Subscription-Sheet
-        - Datasource-Config
-        - Defined-Schedule
-        - Defined-Report
-        - Core-Parameters
-        - Query-Performance
-        - Report-Performance
-        - User-Security
-        - License
-        - Unknown (Default)
-    validations:
-      required: true
+- type: dropdown
+  attributes:
+    label: Framework Release
+    description: What version of platform
+    options:
+      - PMFW 3.0.x (Default)
+      - PMFW 3.1.x
+      - PMFW 3.2.x
+      - PMFW 3.3.x
+      - PMFW 3.4.x
+  validations:
+    required: false
+- type: dropdown
+  id: id-area
+  attributes:
+    label: Framework Components
+    description: Which components are likely producting this defect?
+    multiple: true
+    options:
+      - Unknown (Default)
+      - Platform
+      - Portal
+      - Gateway
+      - Connector
+      - Scheduler
+      - Flow
+      - App
+      - SLA
+      - Manager
+      - Template
+      - DatabaseServer
+      - Webserver
+      - ReportServer
+      - PMCloud
+      - Builder
+  validations:
+    required: true
+- type: dropdown
+  id: id-sys
+  attributes:
+    label: Solution componts
+    description: What solution specific components have this issue?
+    multiple: true
+    options:
+      - Report-Template
+      - Dashboard-Template
+      - Import-Template
+      - Transform-Template
+      - Export-Template
+      - Maintin-Template
+      - SLA-Template
+      - Adhoc-Template
+      - Datapicker-Config
+      - Lookup-Sheet
+      - Subscription-Sheet
+      - Datasource-Config
+      - Defined-Schedule
+      - Defined-Report
+      - Core-Parameters
+      - Query-Performance
+      - Report-Performance
+      - User-Security
+      - License
+      - Unknown (Default)
+  validations:
+    required: true
 - type: textarea
   id: b_how
   attributes:
