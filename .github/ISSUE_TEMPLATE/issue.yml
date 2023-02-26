@@ -18,7 +18,7 @@ body:
 - type: dropdown
   attributes:
       label: Activity
-      description: Which components are likely refactored for this enhancement ?
+      description: What is the activity or story?
       multiple: true
       options:
         - analyzing
