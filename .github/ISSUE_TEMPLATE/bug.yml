@@ -104,9 +104,15 @@ body:
     placeholder: Describe the changes being made in various components to support this enhancements.
     value: >
       ----
+      
       1.
+      
       2.
+      
       3.
-      ...
+      
+      ```
+      
+      
   validations:
     required: true
