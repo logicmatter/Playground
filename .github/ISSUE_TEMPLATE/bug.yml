@@ -7,8 +7,8 @@ assignees:
 body:
 - type: dropdown
   attributes:
-  label: Framework Release
-  description: What version of platform 
+    label: Framework Release
+    description: What version of platform 
     options:
     - PMFW 3.0.x (Default)
     - PMFW 3.1.x
