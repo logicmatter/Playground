@@ -71,7 +71,6 @@ body:
         - Unknown (Default)
     validations:
       required: true
-
 - type: markdown
   attributes:
     value: |
