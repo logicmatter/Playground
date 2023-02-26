@@ -16,7 +16,7 @@ body:
       - PMFW 3.3.x
       - PMFW 3.4.x
   validations:
-    required: false
+    required: true
 - type: dropdown
   id: id-area
   attributes:
