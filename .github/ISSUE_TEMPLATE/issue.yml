@@ -19,7 +19,6 @@ body:
   attributes:
     label: Activity
     description: What work was done?
-    multipart: true
     options:
       - analyzing
       - approving
