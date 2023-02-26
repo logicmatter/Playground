@@ -17,8 +17,8 @@ body:
       - Other (Default)
 - type: dropdown
   attributes:
-    label: Framework Release
-    description: What version of platform 
+    label: Activity
+    description: What work was done?
     multipart: true
     options:
       - analyzing
@@ -58,7 +58,6 @@ body:
       - PMFW 3.4.x
       - Other
 - type: dropdown
-  id: location
   attributes:
     label: Product Location
     description: Where is the action being taken?
@@ -81,7 +80,6 @@ body:
   validations:
     required: true
 - type: dropdown
-  id: id-sys
   attributes: 
     label: Solution Version
     description: What version of the solution
