@@ -13,54 +13,64 @@ body:
       - PMFW 3.2.x
       - PMFW 3.3.x
       - PMFW 3.4.x
-- type: markdown
-  attributes:
-    value: |
-      Before opening a bug report, please search for the behaviour in the existing issues. 
-
-      ---
-
-      Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
-- type: input
-  id: os
-  attributes:
-    label: Operating system
-    description: "Which operating system do you use? Please provide the version as well."
-    placeholder: "macOS Big Sur 11.5.2"
-  validations:
-    required: true  
-- type: input
-  id: laravel
-  attributes:
-    label: Laravel Version
-    description: "Please provide the full Laravel version of your project."
-    placeholder: "v8.6.1"
-  validations:
-    required: true
-- type: input
-  id: php
-  attributes:
-    label: PHP Version
-    description: "Please provide the full PHP version that is powering Tinkerwell."
-    placeholder: "PHP 8.0.7, built: Jun  4 2021 01:50:04"
+- type: dropdown
+  id: id-area
+  attributes: 
+    label: Comonent-Refactored
+    description: Which components are likely refactored for this enhancement ?
+    multiple: true
+    options:
+      - Unknown (Default)
+      - Platform
+      - Portal
+      - Gateway
+      - Connector
+      - Flow
+      - Scheduler
+      - Template
+      - App
+      - DatabaseServer
+      - Webserver
+      - ReportServer
+      - PMCloud
+      - Builder
   validations:
     required: true
 - type: dropdown
-  id: location
-  attributes:
-    label: Project Location
-    description: Where is the project located?
+  id: id-sys
+  attributes: 
+    label: Solution Version
+    description: What version of the solution
     options:
-      - Local
-      - Remote
-      - Somewhere else (please specify in the description!)
+      - All-Domain (Default)
+      - BMS-Solution
+      - OEM-Solution
+      - WMS-Solution
+      - Custom-Domain
+      - Other
   validations:
     required: true
+- type: markdown
+  attributes:
+    value: |
+      Make sure this feature has not been requested earlier
 
+      ---
 
-
-
-
-
-
-
+      Once you know there are no similar tickets create this feature
+- type: input
+  id: id_uc
+  attributes:
+    label: Use case
+    description: "What feature is being defined or implemented"
+    placeholder: "e,g user can add perference and save it"
+  validations:
+    required: true  
+- type: textarea
+  id: id_desc
+  attributes:
+    label: Featire Details
+    description: "Describe in detail the feature implentation"
+    placeholder: "Implement platform API and portal UI"
+  validations:
+    required: true
