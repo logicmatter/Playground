@@ -9,6 +9,7 @@ jobs:
     permissions:
       issues: write
     steps:
+      - name: Add DONE Label
       - uses: actions/github-script@v6
         with:
           script: |
@@ -18,7 +19,11 @@ jobs:
               repo: context.repo.repo,
               labels: ["triage","DONE"]
             })
-            if: ${{ github.event.label.name == 'OK' }}
+      - name: Remove OK Label
+      - uses: actions/github-script@v6
+        with:
+          script: |
+              if: ${{ github.event.label.name == 'OK' }}
                steps:
                 - github.rest.issues.removeLabel({
                     issue_number: context.issue.number,
@@ -26,28 +31,7 @@ jobs:
                     repo: context.repo.repo,
                     labels: ["OK"]
             })
-            if: ${{ github.event.label.name == 'NEW' }}
-               steps:
-                - github.rest.issues.removeLabel({
-                    issue_number: context.issue.number,
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    labels: ["NEW"]
-            })
-            if: ${{ github.event.label.name == 'QA' }}
-               steps:
-                - github.rest.issues.removeLabel({
-                    issue_number: context.issue.number,
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    labels: ["QA"]
-            })
-            if: ${{ github.event.label.name == 'OPEN' }}
-               steps:
-                - github.rest.issues.removeLabel({
-                    issue_number: context.issue.number,
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    labels: ["OPEN"]
-            })
-          
+            
+            
+            
+            
