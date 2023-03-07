@@ -1,7 +1,7 @@
-ame: "Add Open Label"
+ame: "Add-Open-Label"
 on:
   issues:
-    types: [opened, edited,closed]
+    types: [opened]
 jobs:
   add_labels:
     runs-on: ubuntu-latest
