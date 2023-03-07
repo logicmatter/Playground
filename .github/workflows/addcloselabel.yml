@@ -18,9 +18,6 @@ jobs:
               repo: context.repo.repo,
               labels: ["triage","DONE"]
             })
-      - uses: actions/github-script@v6
-        with:
-          script: |
             if: ${{ github.event.label.name == 'OK' }}
                steps:
                 - github.rest.issues.removeLabel({
@@ -53,4 +50,4 @@ jobs:
                     repo: context.repo.repo,
                     labels: ["OPEN"]
             })
-            
+          
