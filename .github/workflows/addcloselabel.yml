@@ -19,12 +19,14 @@ jobs:
               repo: context.repo.repo,
               labels: ["triage","DONE"]
             })
-            if: ${{ github.event.label.name == 'queued' }}
-              github.rest.issues.removeLabel({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                labels: ["OK"]
-              })
+            if: ${{ github.event.label.name == 'OPEN' }}
+            with:
+              script: |
+                github.rest.issues.removeLabel({
+                  issue_number: context.issue.number,
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  labels: ["OPEN"]
+                })
           
           
