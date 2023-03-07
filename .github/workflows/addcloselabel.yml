@@ -19,12 +19,12 @@ jobs:
               repo: context.repo.repo,
               labels: ["triage","DONE"]
             })
-      - name: Remove OK Label
-      - uses: actions/github-script@v6
+            
+      - name: "Remove OK Label"
+      - uses]: actions/github-script@v6
         with:
-          script: |
-              if: ${{ github.event.label.name == 'OK' }}
-               steps:
+          if: ${{ github.event.label.name == 'OK' }}
+            script: |
                 - github.rest.issues.removeLabel({
                     issue_number: context.issue.number,
                     owner: context.repo.owner,
