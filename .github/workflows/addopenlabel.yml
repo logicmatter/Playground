@@ -17,5 +17,12 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              labels: ["triage","OK"]
+              labels: ["triage","OPEN"]
             })
+            github.rest.issues.removeLabels({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ["NEW","OK","QA","DONE"]
+            })
+
