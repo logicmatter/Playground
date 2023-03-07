@@ -1,4 +1,4 @@
-ame: "Add-Open-Label"
+name: "Add-Open-Label"
 on:
   issues:
     types:
