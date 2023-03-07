@@ -1,0 +1,15 @@
+ame: "Add Open Label"
+on:
+  issues:
+    types: [opened, edited,closed]
+jobs:
+  add_labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-add-labels@v1
+        if: ${{ startsWith(github.event.comment.body, '/add-labels') }}
+        with:
+          labels: |
+            OPEN
+
