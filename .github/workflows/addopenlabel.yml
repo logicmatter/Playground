@@ -18,19 +18,7 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               labels: ["OPEN"]
-            })
-      - name: Get the Labels for the issue
-        id: get_issue_labels
-        uses: actions/github-script@v6
-        with:
-          script: |
-            const response = await github.rest.issues.listLabelsOnIssue({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-            });
-            console.log(response);
-            return response.data;            
+            })   
       - name: Check and Remove DONE Labels
         if: ${{ contains(github.event.issue.labels.*.name, 'DONE')
         uses: actions/github-script@v6
