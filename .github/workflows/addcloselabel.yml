@@ -17,4 +17,13 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               labels: ["DONE","triage"]
-            })
+            })            
+  remove_label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-remove-labels@v1
+        if: ${{ startsWith(github.event.comment.body, '/remove-labels') }}
+        with:
+          labels: OPEN
+
