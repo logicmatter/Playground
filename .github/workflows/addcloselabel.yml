@@ -9,7 +9,8 @@ jobs:
     permissions:
       issues: write
     steps:
-      - uses: actions/github-script@v6
+      - name: Add labels
+        uses: actions/github-script@v6
         with:
           script: |
             github.rest.issues.addLabels({
@@ -17,11 +18,59 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               labels: ["DONE","triage"]
-            })            
-            github.rest.issues.removeLabel({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ["OPEN"]
-            })            
-  
+            })
+
+  remove_OPEN_label_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Remove labels
+        uses: actions/github-script@v6
+        with:
+          script: |
+            if (${{ contains(github.event.issue.labels.*.name, 'OPEN') }}) {
+              github.rest.issues.removeLabel({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: ["OPEN"]
+              })
+            }
+
+  remove_QA_label_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Remove labels
+        uses: actions/github-script@v6
+        with:
+          script: |
+            if (${{ contains(github.event.issue.labels.*.name, 'QA') }}) {
+              github.rest.issues.removeLabel({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: ["QA"]
+              })
+            }
+
+  remove_OK_label_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Remove labels
+        uses: actions/github-script@v6
+        with:
+          script: |
+            if (${{ contains(github.event.issue.labels.*.name, 'OK') }}) {
+              github.rest.issues.removeLabel({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: ["OK"]
+              })
+            }
+
