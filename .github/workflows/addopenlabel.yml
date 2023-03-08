@@ -10,15 +10,15 @@ jobs:
     permissions:
       issues: write
     steps:
-      - uses: actions/github-script@v6
+      - name: Add labels
+        uses: actions/github-script@v6
         with:
           script: |
             github.rest.issues.addLabels({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              labels: ["OPEN"]
-            })   
+              labels: ["OPEN"]            
       - name: Check and Remove DONE Labels
         if: ${{ contains(github.event.issue.labels.*.name, 'DONE')
         uses: actions/github-script@v6
