@@ -19,4 +19,23 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               labels: ["OPEN"]
-            })            
+            })
+
+  remove_label_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Remove labels
+        uses: actions/github-script@v6
+        with:
+          script: |
+            if (${{ contains(github.event.issue.labels.*.name, 'DONE') }}) {
+              github.rest.issues.removeLabel({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: ["DONE"]
+              })
+            }
+
