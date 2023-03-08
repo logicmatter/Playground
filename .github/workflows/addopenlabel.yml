@@ -32,7 +32,7 @@ jobs:
             console.log(response);
             return response.data;            
       - name: Check and Remove DONE Labels
-        if: ${{ ! contains(join(fromJSON(steps.get_issue_labels.outputs.result).*.name, ', '), 'DONE') }}
+        if: ${{ ! contains(join(fromJSON(steps.get_issue_labels.outputs.result).*.name, ', '), 'DONE/') }}
         uses: actions/github-script@v6
           script:
             await github.rest.issues.removeLabel({
