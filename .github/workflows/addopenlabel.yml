@@ -20,14 +20,3 @@ jobs:
               repo: context.repo.repo,
               labels: ["OPEN"]
             })            
-      - name: Check and Remove DONE Labels
-        if: ${{ contains(github.event.issue.labels.*.name, 'DONE')
-        uses: actions/github-script@v6
-          script: |
-            github.rest.issues.removeLabel({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: ["DONE"]
-            })
-
