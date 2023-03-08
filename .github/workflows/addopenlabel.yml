@@ -22,7 +22,7 @@ jobs:
       - name: Check and Remove DONE Labels
         if: ${{ contains(github.event.issue.labels.*.name, 'DONE')
         uses: actions/github-script@v6
-          script:
+          script: |
             await github.rest.issues.removeLabel({
               issue_number: context.issue.number,
               owner: context.repo.owner,
