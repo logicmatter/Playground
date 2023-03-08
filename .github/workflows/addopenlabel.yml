@@ -19,8 +19,8 @@ jobs:
               repo: context.repo.repo,
               labels: ["OPEN"]
             })
-      - name: Get latest pull request labels
-        id: get_pr_labels
+      - name: Get the Labels for the issue
+        id: get_issue_labels
         uses: actions/github-script@v6
         with:
           script: |
@@ -30,4 +30,14 @@ jobs:
               issue_number: context.issue.number,
             });
             console.log(response);
-            return response.data;
+            return response.data;            
+      - name: Check and Remove DONE Labels
+        if: ${{ ! contains(join(fromJSON(steps.get_issue_labels.outputs.result).*.name, ', '), 'DONE') }}
+        uses: actions/github-script@v6
+          script:
+            await github.rest.issues.removeLabel({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: ["DONE"]
+            })
