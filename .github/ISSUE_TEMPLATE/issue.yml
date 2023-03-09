@@ -1,7 +1,7 @@
 name: 🧩Issue Ticket
 description: An activity or requirement or configuration requirements, sysops or devops tasks
 title: "🧩[ticket]"
-labels: [activity,story,tbd]
+labels: [activity,story,tbd,NEW]
 body:
 - type: dropdown
   attributes:
