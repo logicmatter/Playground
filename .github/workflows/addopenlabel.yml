@@ -2,7 +2,6 @@ name: "Add-Open-Label"
 on:
   issues:
     types:
-      - reopened
       - opened
 jobs:
   label_issues:
@@ -54,24 +53,6 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 name: ["QA"]
-              })
-            }
-
-  remove_OK_label_issues:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
-      - name: Remove labels
-        uses: actions/github-script@v6
-        with:
-          script: |
-            if (${{ contains(github.event.issue.labels.*.name, 'OK') }}) {
-              github.rest.issues.removeLabel({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                name: ["OK"]
               })
             }
 

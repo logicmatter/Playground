@@ -56,42 +56,6 @@ jobs:
               })
             }
 
-  remove_QA_label_issues:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
-      - name: Remove labels
-        uses: actions/github-script@v6
-        with:
-          script: |
-            if (${{ contains(github.event.issue.labels.*.name, 'QA') }}) {
-              github.rest.issues.removeLabel({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                name: ["QA"]
-              })
-            }
-
-  remove_OK_label_issues:
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
-      - name: Remove labels
-        uses: actions/github-script@v6
-        with:
-          script: |
-            if (${{ contains(github.event.issue.labels.*.name, 'OK') }}) {
-              github.rest.issues.removeLabel({
-                issue_number: context.issue.number,
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                name: ["OK"]
-              })
-            }
-
   remove_NEW_label_issues:
     runs-on: ubuntu-latest
     permissions:
