@@ -1,6 +1,6 @@
-name: Stoey Ticket
+name: ❓Stoey Ticket
 description: Requirements and howto tickets
-title: "[story]"
+title: "❓[story]"
 labels: [story,tbd,NEW,howto]
 body:
 - type: dropdown
