@@ -1,6 +1,6 @@
-name: ❓Stoey Ticket
+name: ❓Story HowTo
 description: Requirements and howto tickets
-title: "❓[story]"
+title: "❓[story]: "
 labels: [story,tbd,NEW,howto]
 body:
 - type: dropdown
@@ -50,7 +50,7 @@ body:
         - other (Default)
 - type: dropdown
   attributes:
-    label: Framework Release
+    label: Target Release
     description: What version of platform 
     options:
       - PMFW 3.0.x (Default)
@@ -99,7 +99,6 @@ body:
     value: |
 
       ---
-
 
 - type: input
   id: os
