@@ -5,14 +5,6 @@ labels: ["howto","tbd","NEW"]
 body:
 - type: dropdown
   attributes:
-    label: Artifact Type
-    description: What is the artifact ist a howto or a use case
-    options:
-      - Story
-      - HowTo
-      - Other (Default)
-- type: dropdown
-  attributes:
     label: Target Release
     description: What version of platform 
     options:
