@@ -99,6 +99,7 @@ body:
     value: |
 
       ---
+      ---
 
 - type: input
   id: os
