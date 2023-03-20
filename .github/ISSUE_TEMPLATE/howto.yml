@@ -1,6 +1,6 @@
 name: ❔HowTo
 description: Requirements and howto tickets
-title: "❔[story]: "
+title: "❔[howto]: "
 labels: ["howto","tbd","NEW"]
 body:
 - type: dropdown
