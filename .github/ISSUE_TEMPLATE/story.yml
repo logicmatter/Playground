@@ -5,8 +5,8 @@ labels: ["story","tbd","NEW","howto"]
 body:
 - type: dropdown
   attributes:
-    label: Area Type
-    description: What is the area of the use case
+    label: Artifact Type
+    description: What is the artifact ist a howto or a use case
     options:
       - Story
       - HowTo
