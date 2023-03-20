@@ -98,8 +98,7 @@ body:
   attributes:
     value: |
 
-      ---
-      ---
+      ----
 
 - type: input
   id: os
@@ -109,6 +108,12 @@ body:
     placeholder: "e.g user assigns report view permission"
   validations:
     required: true  
+- type: markdown
+  attributes:
+    value: |
+
+      ----
+
 - type: textarea
   id: php
   attributes:
