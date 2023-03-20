@@ -1,7 +1,7 @@
 name: 📘Story
 description: Requirements and user story tickets
 title: "📘[story]: "
-labels: ["story","tbd","NEW","howto"]
+labels: ["story","tbd","NEW"]
 body:
 - type: dropdown
   attributes:
