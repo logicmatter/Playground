@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RFP Submission</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>RFP Submission</h1>
+
+    <form id="rfpForm">
+      <label>RFP Title
+        <input name="title" id="title" required maxlength="100">
+      </label>
+
+      <label>Description
+        <textarea name="description" id="description" required rows="6"></textarea>
+      </label>
+
+      <label>Dealer Name
+        <input name="dealerName" id="dealerName" required maxlength="60">
+      </label>
+
+      <label>Dealer Email
+        <input name="dealerEmail" id="dealerEmail" type="email" required>
+      </label>
+
+      <label>End Customer Name
+        <input name="endCustomerName" id="endCustomerName" required maxlength="60">
+      </label>
+
+      <label>Site Name
+        <input name="siteName" id="siteName" required maxlength="80">
+      </label>
+
+      <label>End Customer Email
+        <input name="endCustomerEmail" id="endCustomerEmail" type="email" required>
+      </label>
+
+      <div class="actions">
+        <button type="submit" id="submitBtn">Submit RFP</button>
+      </div>
+
+      <div id="message" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+<script>
+const WORKER_URL = "https://REPLACE_WITH_YOUR_WORKER.workers.dev"; // <<-- update this
+
+const form = document.getElementById('rfpForm');
+const message = document.getElementById('message');
+const submitBtn = document.getElementById('submitBtn');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  submitBtn.disabled = true;
+  message.textContent = 'Sending...';
+
+  const payload = {
+    title: document.getElementById('title').value.trim(),
+    description: document.getElementById('description').value.trim(),
+    dealerName: document.getElementById('dealerName').value.trim(),
+    dealerEmail: document.getElementById('dealerEmail').value.trim(),
+    endCustomerName: document.getElementById('endCustomerName').value.trim(),
+    siteName: document.getElementById('siteName').value.trim(),
+    endCustomerEmail: document.getElementById('endCustomerEmail').value.trim()
+  };
+
+  try {
+    const res = await fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const json = await res.json();
+    if (res.ok && json.issueUrl) {
+      message.innerHTML = `Submitted — <a href="${json.issueUrl}" target="_blank" rel="noopener">view issue</a>`;
+      form.reset();
+    } else {
+      const err = json && json.message ? json.message : JSON.stringify(json);
+      message.textContent = 'Error: ' + err;
+    }
+  } catch (err) {
+    message.textContent = 'Network error: ' + err.message;
+  } finally {
+    submitBtn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>
