@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RFP Submission</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Submit RFP</h1>
+  <form id="rfpForm">
+    <label>RFP Title:<input type="text" name="title" required></label>
+    <label>Description:<textarea name="description" required></textarea></label>
+    <label>Dealer Name:<input type="text" name="dealer" required></label>
+    <label>Dealer Email:<input type="email" name="dealerEmail" required></label>
+    <label>Customer Name:<input type="text" name="customer" required></label>
+    <label>Site Name:<input type="text" name="site" required></label>
+    <label>Customer Email:<input type="email" name="customerEmail" required></label>
+    <button type="submit">Submit RFP</button>
+  </form>
+
+  <script>
+  const form = document.getElementById('rfpForm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+    
+    // Call your GitHub workflow to save JSON or create issue
+    const response = await fetch(
+      'https://api.github.com/repos/logicmatter/playground/actions/workflows/rfp-submit.yml/dispatches',
+      {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/vnd.github+json',
+          'Authorization': 'Bearer <INSTALLATION_TOKEN>'
+        },
+        body: JSON.stringify({
+          ref: 'main',
+          inputs: data
+        })
+      }
+    );
+
+    if (response.ok) alert('RFP submitted successfully!');
+    else alert('Error submitting RFP.');
+  });
+  </script>
+</body>
+</html>
